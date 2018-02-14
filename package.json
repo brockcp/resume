@@ -1,0 +1,31 @@
+{
+  "name": "resume-json",
+  "version": "1.0.0",
+  "description": "brocks resume",
+  "author": "brock patterson",
+  "license": "UNLICENSED",
+  "homepage": "https://github.com/brockcp/hello#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brockcp/hello.git"
+  },
+  "scripts": {
+    "s": "browser-sync start --server --files 'src/*' --startPath 'src'",
+    "s-prod": "browser-sync start --server --files 'docs/*' --startPath 'docs'",
+    "scss": "node-sass --output-style nested --indent-type tab --indent-width 1 -o src/css src/scss",
+    "scss-prod": "node-sass --output-style compressed -o docs/css src/scss",
+    "build-html": "copyfiles -u 1 src/index.html docs",
+    "build-js": "copyfiles -u 1 src/js/**/*.* docs",
+    "build-bootstrap": "copyfiles -u 1 src/css/bootstrap.css docs",
+    "build-fonts": "copyfiles -u 1 src/fonts/**/*.* docs",
+    "uglify": "mkdirp src/js -p && uglifyjs src/js/*.js -m -o src/js/app.js && uglifyjs src/js/*.js -m -c -o src/js/app.min.js",
+    "imagemin": "imagemin src/img/* --out-dir docs/img"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "copyfiles": "^1.2.0",
+    "node-sass": "^4.7.2",
+    "uglify-js": "^3.3.10"
+  },
+  "dependencies": {}
+}
