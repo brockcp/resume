@@ -13,7 +13,7 @@
     "s": "browser-sync start --server --files 'src/*' --startPath 'src'",
     "s-prod": "browser-sync start --server --files 'docs/*' --startPath 'docs'",
     "scss": "node-sass --output-style nested --indent-type tab --indent-width 1 -o src/css src/scss",
-    "scss-prod": "node-sass --output-style compressed -o docs/css src/scss",
+    "build-css": "node-sass --output-style compressed -o docs/css src/scss",
     "build-html": "copyfiles -u 1 src/index.html docs",
     "build-js": "copyfiles -u 1 src/js/**/*.* docs",
     "build-bootstrap": "copyfiles -u 1 src/css/bootstrap.css docs",

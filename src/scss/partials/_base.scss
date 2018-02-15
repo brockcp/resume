@@ -7,13 +7,13 @@
   background-repeat: repeat-x
 }
 .icon-html5, .icon-css3, .icon-javascript, .icon-ruby,
-.icon-ruby-on-rails, .icon-mysql, .fa-github, .icon-npm, .icon-line-graph{
+.icon-ruby-on-rails, .icon-postgres-alt, .fa-github, .icon-npm, .icon-line-graph{
   font-size: 100px;
 }
 .fa-github{height:130px; margin-top:15px}
 
 #skill-html5, #skill-css3, #skill-javascript, #skill-ruby, #skill-ruby-on-rails,
-#skill-mysql, #skill-github, #skill-taskrunners, #skill-analytics{
+#skill-postgres-alt, #skill-github, #skill-taskrunners, #skill-analytics{
   display: block;
   visibility: hidden;
 }
