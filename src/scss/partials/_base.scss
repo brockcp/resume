@@ -1,3 +1,8 @@
+/*!
+ *
+ * brock patterson hello base
+ *
+ */
 .intro, .resumeskills {
   overflow:hidden;
   z-index:1;
@@ -6,14 +11,17 @@
   background-attachment: scroll;
   background-repeat: repeat-x
 }
-.icon-html5, .icon-css3, .icon-javascript, .icon-ruby,
-.icon-ruby-on-rails, .icon-postgres-alt, .fa-github, .icon-npm, .icon-line-graph{
+.icon-html5, .icon-css3, .icon-javascript,
+.icon-ruby-on-rails, .icon-mysql, .fa-github,
+.icon-npm, .icon-line-graph, .fa-image {
   font-size: 100px;
 }
-.fa-github{height:130px; margin-top:15px}
+.fa-github, .fa-image{height:130px; margin-top:15px}
+.fa-download{font-size:25px}
 
-#skill-html5, #skill-css3, #skill-javascript, #skill-ruby, #skill-ruby-on-rails,
-#skill-postgres-alt, #skill-github, #skill-taskrunners, #skill-analytics{
+#skill-html5, #skill-css3, #skill-javascript,
+#skill-ruby-on-rails, #skill-mysql, #skill-github,
+#skill-npm, #skill-analytics, #skill-design {
   display: block;
   visibility: hidden;
 }
@@ -21,7 +29,7 @@
 .img-lessons{background-image: url(../img/lessons.jpg)}
 .img-nikko{background-image: url(../img/nikko.jpg)}
 .img-sand{background-image: url(../img/sand.jpg)}
-.img-chicks, .img-lessons, .img-nikko, .img-sand{
+.img-chicks, .img-lessons, .img-nikko, .img-sand {
   display: block;
   position: relative;
   background-attachment: scroll;
@@ -49,14 +57,15 @@ a{color:$base-1d}
 a:hover{color:$base-1d}
 .color-icon{color:$base-1b}
 .skill-title {color: $base-1c}
-.fa-wrench {color: $base-1c}
-.fa-ul li {color: $base-1d}
+.fa-ul li{color: $base-1d}
 .intro, .statement, .resumeskills, .timeline{
   background-color: $base-2a}
 hr.hr-skills, hr.hr-background{width: 95%;border: 0;height: 1px; background-image: linear-gradient(90deg, $base-1a, $base-2b, $base-1a)}
 .color-a{ color: $base-1c !important}
+.color-b{ color: $base-1d}
 .font-500{font-weight:500 !important;}
 .font-300{font-weight:300 !important;}
 .w-80-m-0-a{width:80%; margin:0 auto}
 .m-b-0{margin-bottom:0}
+.m-l-10{margin-left:10px}
 .p-20{padding:20px}

@@ -1,5 +1,5 @@
 {
-  "name": "resume-json",
+  "name": "brocks-resume-json",
   "version": "1.0.0",
   "description": "brocks resume",
   "author": "brock patterson",
@@ -10,21 +10,29 @@
     "url": "git+https://github.com/brockcp/hello.git"
   },
   "scripts": {
-    "s": "browser-sync start --server --files 'src/*' --startPath 'src'",
-    "s-prod": "browser-sync start --server --files 'docs/*' --startPath 'docs'",
-    "scss": "node-sass --output-style nested --indent-type tab --indent-width 1 -o src/css src/scss",
-    "build-css": "node-sass --output-style compressed -o docs/css src/scss",
-    "build-html": "copyfiles -u 1 src/index.html docs",
-    "build-js": "copyfiles -u 1 src/js/**/*.* docs",
-    "build-bootstrap": "copyfiles -u 1 src/css/bootstrap.css docs",
-    "build-fonts": "copyfiles -u 1 src/fonts/**/*.* docs",
-    "uglify": "mkdirp src/js -p && uglifyjs src/js/*.js -m -o src/js/app.js && uglifyjs src/js/*.js -m -c -o src/js/app.min.js",
-    "imagemin": "imagemin src/img/* --out-dir docs/img"
+    "import-mfizz-fonts": "copyfiles -u 3 node_modules/font-mfizz/dist/font-mfizz.eot  node_modules/font-mfizz/dist/font-mfizz.svg node_modules/font-mfizz/dist/font-mfizz.ttf node_modules/font-mfizz/dist/font-mfizz.woff src/fonts",
+    "import-fontawesome-fonts": "copyfiles -u 2 node_modules/font-awesome/fonts/* src",
+    "import-jquery": "copyfiles -u 3 'node_modules/jquery/dist/jquery.min.js' src/js",
+    "scss-to-src": "node-sass --output-style nested --indent-type tab --indent-width 1 -o src/css src/scss",
+    "push-html": "copyfiles -u 1 src/index.html docs",
+    "push-img": "imagemin src/img/* --out-dir docs/img",
+    "push-css": "node-sass --output-style compressed -o docs/css src/scss",
+    "push-js": "copyfiles -u 1 src/js/**/*.* docs",
+    "push-fonts": "copyfiles -u 1 src/fonts/*.* docs",
+    "serve-src": "browser-sync start --server --files 'src/*' --startPath 'src'",
+    "serve-docs": "browser-sync start --server --files 'docs/*' --startPath 'docs'"
   },
   "devDependencies": {
-    "browser-sync": "^2.23.6",
-    "copyfiles": "^1.2.0",
+    "imagemin": "^5.3.1",
     "node-sass": "^4.7.2",
+    "copyfiles": "^1.2.0",
+    "browser-sync": "^2.23.6",
+    "autoprefixer": "^8.1.0",
+    "bootstrap": "^4.0.0",
+    "font-awesome": "^4.7.0",
+    "font-mfizz": "^2.4.1",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.12.9",
     "uglify-js": "^3.3.10"
   },
   "dependencies": {}
