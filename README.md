@@ -12,8 +12,8 @@
 - **CSS3** for animations
 - **jQuery** dependency for animations
 - **Sass** for SCSS preprocessing
-- **NPM** for file compiling
+- **NPM** for file compiling - **Browser-sync**, **Node-sass**, **Copyfiles**, **Imagemin**
 - **FontAwesome** for icons
-- **FontMfizz** for icons
+- **FontMfizz** for brand icons
 
 #### You can see this site in action right [here](https://brockcp.github.io/hello/) on GitHub Pages
