@@ -1,7 +1,7 @@
 {
-  "name": "brocks-resume-json",
-  "version": "1.0.0",
-  "description": "brocks resume",
+  "name": "brocks-patterson-resume",
+  "version": "2.0.0",
+  "description": "brock's-resume",
   "author": "brock patterson",
   "license": "UNLICENSED",
   "homepage": "https://github.com/brockcp/hello#readme",
@@ -13,19 +13,19 @@
     "import-mfizz-fonts": "copyfiles -u 3 node_modules/font-mfizz/dist/font-mfizz.eot  node_modules/font-mfizz/dist/font-mfizz.svg node_modules/font-mfizz/dist/font-mfizz.ttf node_modules/font-mfizz/dist/font-mfizz.woff src/fonts",
     "import-fontawesome-fonts": "copyfiles -u 2 node_modules/font-awesome/fonts/* src",
     "import-jquery": "copyfiles -u 3 'node_modules/jquery/dist/jquery.min.js' src/js",
-    "scss-to-src": "node-sass --output-style nested --indent-type tab --indent-width 1 -o src/css src/scss",
-    "push-html": "copyfiles -u 1 src/index.html docs",
-    "push-img": "imagemin src/img/* --out-dir docs/img",
-    "push-css": "node-sass --output-style compressed -o docs/css src/scss",
-    "push-js": "copyfiles -u 1 src/js/**/*.* docs",
-    "push-fonts": "copyfiles -u 1 src/fonts/*.* docs",
-    "serve-src": "browser-sync start --server --files 'src/*' --startPath 'src'",
-    "serve-docs": "browser-sync start --server --files 'docs/*' --startPath 'docs'"
+    "sass-css": "node-sass --output-style compressed -o src/css src/scss",
+    "dev-s": "browser-sync start --server --files 'src/*' --startPath 'src'",
+    "prod-html-css": "useref src/index.html docs/index.html --css concat",
+    "prod-img": "copyfiles -u 2 src/img/* docs/img",
+    "prod-js": "copyfiles -u 1 src/js/**/*.* docs",
+    "prod-fonts": "copyfiles -u 1 src/fonts/*.* docs",
+    "prod-s": "browser-sync start --server --files 'docs/*' --startPath 'docs'"
   },
   "devDependencies": {
     "autoprefixer": "^8.3.0",
     "bootstrap": "^4.1.0",
     "browser-sync": "^2.23.6",
+    "concat": "^1.0.3",
     "copyfiles": "^1.2.0",
     "font-awesome": "^4.7.0",
     "font-mfizz": "^2.4.1",
@@ -33,7 +33,8 @@
     "jquery": "^3.3.1",
     "node-sass": "^4.8.3",
     "popper.js": "^1.14.3",
-    "uglify-js": "^3.3.21"
+    "uglify-js": "^3.3.21",
+    "useref-file": "^0.2.1"
   },
   "dependencies": {}
 }
