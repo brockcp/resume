@@ -7,10 +7,12 @@
 html, body{height:100%;}
 
 .image-container{
-  height:100%}
+  width:100%;
+  height:auto}
 
 .image-container .image {
-  height:100%;
+  width:100%;
+  height:auto;
   display: block;
   position: relative;
   background-attachment: fixed; //bigger scroill
