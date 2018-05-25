@@ -17,6 +17,24 @@
   <link rel="mask-icon" href="https://brockcp.github.io/hello/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
+
+  <style>
+  /* html, body{height:100%; background:transparent; font-weight: 200}
+  .image-container{height:100%}
+  .image-container .image {
+    height:100%;
+    display: block;
+    position: relative;
+    background: no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-bottom: 56.25%;
+    opacity: 0;
+    transition: opacity 2.6s ease;
+    transition-delay: 0.8s;}
+  .image-container.add-fade .image {
+    opacity: 1;} */
+    </style>
 </head>
  <body>
     <div class="container-fluid intro p-20">
@@ -32,7 +50,8 @@
       </div>
     </div>
 
-    <div class="img-chicks">
+    <div class="image-container">
+          <div class="image" data-src="https://brockcp.github.io/hello/img/sam.jpg"></div>
     </div>
 
     <div class="container-fluid statement p-20">
@@ -51,7 +70,8 @@
       </h4>
     </div>
 
-    <div class="img-lessons">
+    <div class="image-container">
+          <div class="image" data-src="https://brockcp.github.io/hello/img/lessons.jpg"></div>
     </div>
 
     <div class="container-fluid resumeskills">
@@ -138,7 +158,8 @@
       </h3>
     </div><!--end skills-->
 
-    <div class="img-nikko">
+    <div class="image-container">
+          <div class="image" data-src="https://brockcp.github.io/hello/img/nikko.jpg"></div>
     </div>
 
     <div class="container-fluid timeline">
@@ -162,11 +183,24 @@
       </div>
     </div>
 
-    <div class="img-sand">
-      <h3>よろしく</h3>
+    <div class="image-container">
+      <div class="image" data-src="https://brockcp.github.io/hello/img/sand.jpg"></div>
+      <!-- <h3>よろしく</h3> -->
     </div>
 
     <script src="js/jquery.min.js"></script>
+    <script>
+      $('.image-container').each(function () {
+        var $wrap = $(this);
+        var $img = $wrap.find('.image');
+        var tempImg = new Image();
+        tempImg.src = $img.data('src');
+        tempImg.onload = function () {
+          $img.css('background-image', 'url(' + tempImg.src + ')');
+          $wrap.addClass('add-fade');
+        };
+      });
+    </script>
     <script>
     	$(window).scroll(function() {
     		$("#skill-html5, #skill-css3, #skill-javascript, #skill-ruby-on-rails, #skill-mysql, #skill-github, #skill-npm, #skill-analytics, #skill-design").each(function(){
