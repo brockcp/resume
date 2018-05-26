@@ -4,10 +4,10 @@
   "description": "brock's-resume",
   "author": "brock patterson",
   "license": "UNLICENSED",
-  "homepage": "https://github.com/brockcp/hello#readme",
+  "homepage": "https://github.com/brockcp/resume#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/brockcp/hello.git"
+    "url": "git+https://github.com/brockcp/resume.git"
   },
   "scripts": {
     "import-mfizz-fonts": "copyfiles -u 3 node_modules/font-mfizz/dist/font-mfizz.eot  node_modules/font-mfizz/dist/font-mfizz.svg node_modules/font-mfizz/dist/font-mfizz.ttf node_modules/font-mfizz/dist/font-mfizz.woff src/fonts",
