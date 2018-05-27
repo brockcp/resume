@@ -12,7 +12,6 @@ ul li{font-size:24px}
   height:auto;
   display: block;
   position: relative;
-  background-attachment: fixed; //bigger scroill
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -20,6 +19,11 @@ ul li{font-size:24px}
   opacity: 0;
   transition: opacity 2.6s ease;
   transition-delay: 0.8s;}
+
+@media (min-width: 1200px){
+.image-container .image{
+  background-attachment: fixed;}//scroll default
+}
 
 .image-container.add-fade .image {
   opacity: 1;}

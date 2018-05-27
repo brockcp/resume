@@ -20,7 +20,6 @@
     "prod-js": "copyfiles -u 1 src/js/**/*.* docs",
     "prod-fonts": "copyfiles -u 1 src/fonts/*.* docs",
     "prod-s": "browser-sync start --server --files 'docs/*' --startPath 'docs'",
-
     "watch-scss": "onchange 'src/scss' -- npm-run-all sass-css"
 
   },
