@@ -48,7 +48,7 @@ ul li{font-size:24px}
 #skill-ruby-on-rails, #skill-mysql, #skill-github,
 #skill-npm, #skill-analytics, #skill-design {
   display: block;
-  visibility: hidden;
+  opacity:0;
 }
 
 // .image-container h3{position: absolute;left:20%;bottom:3%}
