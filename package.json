@@ -13,14 +13,16 @@
     "import-mfizz-fonts": "copyfiles -u 3 node_modules/font-mfizz/dist/font-mfizz.eot  node_modules/font-mfizz/dist/font-mfizz.svg node_modules/font-mfizz/dist/font-mfizz.ttf node_modules/font-mfizz/dist/font-mfizz.woff src/fonts",
     "import-fontawesome-fonts": "copyfiles -u 2 node_modules/font-awesome/fonts/* src",
     "import-jquery": "copyfiles -u 3 'node_modules/jquery/dist/jquery.min.js' src/js",
-    "sass-css": "node-sass --output-style compressed -o src/css src/scss",
+    "sass-css": "node-sass --output-style nested --indent-type tab --indent-width 1 -o src/css src/scss",
+    "sass-css-compress": "node-sass --output-style compressed -o src/css src/scss",
     "dev-s": "browser-sync start --server --files 'src/*' --startPath 'src'",
     "prod-html-css": "useref src/index.html docs/index.html --css concat",
     "prod-img": "copyfiles -u 2 src/img/* docs/img",
     "prod-js": "copyfiles -u 1 src/js/**/*.* docs",
     "prod-fonts": "copyfiles -u 1 src/fonts/*.* docs",
     "prod-s": "browser-sync start --server --files 'docs/*' --startPath 'docs'",
-    "watch-scss": "onchange 'src/scss' -- npm-run-all sass-css"
+    "watch-scss": "onchange 'src/scss' -- npm-run-all sass-css",
+    "XXXautoprefixer": "postcss -u autoprefixer -r docs/test/*"
 
   },
   "devDependencies": {
