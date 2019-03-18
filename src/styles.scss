@@ -43,7 +43,12 @@ hr.hr-skills, hr.hr-background{width: 95%;border: 0;height: 1px; background-imag
   background-repeat:no-repeat;
   background-position: center center;
   background-size:cover;
-  background-attachment: fixed;}
+}
+@media (min-width: 1200px){
+  .skills-image, .works-image{
+    background-attachment: fixed;
+  }
+}
 .skills-image{ background-image: url('assets/img/lessons.jpg')}
 .works-image{ background-image: url('assets/img/nikko.jpg')}
 

@@ -3,9 +3,13 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  background-attachment:fixed;
   opacity:0;
   transition: opacity 3s ease
+}
+@media (min-width: 1200px){
+  #hero-image{
+    background-attachment: fixed;
+  }
 }
 #hero-image.add-fade {
   opacity: 1;
