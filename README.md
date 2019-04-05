@@ -15,4 +15,4 @@
 - **Angular FontAwesome** for general icons
 - **FontMfizz** for brand icons
 
-#### this code can be seen in action right [here](https://brockcp.github.io/resume//) on GitHub Pages
+#### This code can be seen in action right [here](https://brockcp.github.io/resume//) on GitHub Pages
