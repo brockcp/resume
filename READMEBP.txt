@@ -12,4 +12,6 @@ $ ng build --prod --output-path docs --base-href /resume/
   -Footer tooltip styling in footer module.
 
 -NOTES-
-  Built on Angular7.
+  -Built on Angular7
+  -Compiles with script
+  -latest icon scheme(no safari pinned tab)
