@@ -8,8 +8,7 @@
  -$ npm run build   //builds prod folder
  -$ http-server docs/   //docs is designated output folder in angular.json
 
-$ ng build --prod --output-path docs --base-href "https://brockcp.github.io/resume/"
-
+$ ng build --prod --output-path docs --base-href /resume/
 -FEATURES-
 
 -ISSUES-
