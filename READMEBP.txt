@@ -8,6 +8,7 @@ $ ng build --prod --output-path docs --base-href /resume/
 -FEATURES-
 
 -ISSUES-
+  -Resume not downloading
   -Intro fadeIn image handled with jQuery.
   -Footer tooltip styling in footer module.
 
