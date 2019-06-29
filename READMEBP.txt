@@ -2,8 +2,13 @@
   -$ ng serve (localhost:4200)
   -https://brockcp.github.io/resume/
 
--BUILD-(BUILD BEFORE PUSH)
-$ ng build --prod --output-path docs --base-href /resume/
+-BUILD-
+ -$ npm install http-server
+ -configuration in angular.json
+ -$ npm run build   //builds prod folder
+ -$ http-server docs/   //docs is designated output folder in angular.json
+
+$ ng build --prod --output-path docs --base-href "https://brockcp.github.io/resume"
 
 -FEATURES-
 
