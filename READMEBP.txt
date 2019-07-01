@@ -6,9 +6,9 @@
   -configuration in angular.json -> currently set to docs folder. default setting -> "outputPath":"dist/<appName>"
   -LOCAL BUILD, SERVE & WATCH
     -$ ng build --watch  //builds and watches for changes
-    -$ npm run dev    //'dev' is script in package.json for running lite-server
+    -$ npm run dev    //'dev' is script in package.json for running lite-server which requires bs-config.json
 
-  -old method
+  -PUSH TO GITHUB (above fails on github pages. base-href flag seems necessary)
     -$ ng build --prod --output-path docs --base-href /resume/
 
 -FEATURES-
