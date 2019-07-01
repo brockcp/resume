@@ -3,13 +3,14 @@
   -https://brockcp.github.io/resume/
 
 -BUILD-
-  -current method for deploying to ghpages:
+  -configuration in angular.json -> currently set to docs folder. default setting -> "outputPath":"dist/<appName>"
+  -LOCAL BUILD & SERVE(doesnt work on github pages)
+    -$ npm run build
+    -$ serve -s docs    //localhost:5000
+
+  -WORKING METHOD FOR DEPLOYING TO GHPAGES(cannot run locally)
     -$ ng build --prod --output-path docs --base-href /resume/
 
- -LOCAL BUILD & SERVE
- -configuration in angular.json -> build to docs folder
-  -$ npm run build   //builds prod folder
-  -$ serve -s docs    //localhost:5000
 
 -FEATURES-
 
