@@ -4,13 +4,12 @@
 
 -BUILD-
   -configuration in angular.json -> currently set to docs folder. default setting -> "outputPath":"dist/<appName>"
-  -LOCAL BUILD & SERVE(doesnt work on github pages)
-    -$ npm run build
-    -$ serve -s docs    //localhost:5000
+  -LOCAL BUILD, SERVE & WATCH
+    -$ ng build --watch  //builds and watches for changes
+    -$ npm run dev    //'dev' is script in package.json for running lite-server
 
-  -WORKING METHOD FOR DEPLOYING TO GHPAGES(cannot run locally)
+  -old method
     -$ ng build --prod --output-path docs --base-href /resume/
-
 
 -FEATURES-
 
