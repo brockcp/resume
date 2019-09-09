@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin, faGithub, faDribbble } from '@fortawesome/free-brands-svg-icons';
 import { faFileDownload, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 
@@ -14,6 +14,7 @@ export class FooterComponent implements OnInit {
   faGithub = faGithub;
   faLinkedin = faLinkedin;
   faEnvelope = faEnvelope;
+  faDribbble = faDribbble;
   constructor() { }
   ngOnInit() { }
 
