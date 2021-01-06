@@ -1,0 +1,103 @@
+#hero-image {
+  height: 400px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity:0;
+  transition: opacity 3s ease
+}
+@media (min-width: 1200px){
+  #hero-image{
+    background-attachment: fixed;
+  }
+}
+#hero-image.add-fade {
+  opacity: 1;
+}
+
+//ANIMATIONS//
+.animated {
+ -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.stretchLeft{
+	animation-name: stretchLeft;
+	animation-duration: 1.5s;
+	animation-timing-function: ease-out;
+  transform-origin: 100% 0%;
+	-webkit-animation-name: stretchLeft;
+	-webkit-animation-duration: 1.5s;
+	-webkit-animation-timing-function: ease-out;
+	-webkit-transform-origin: 100% 0%;
+	-ms-transform-origin: 100% 0%;
+}
+
+@keyframes stretchLeft {
+	0% {transform: scaleX(0.3);}
+	40% {transform: scaleX(1.02);}
+	60% {transform: scaleX(0.98);}
+	80% {transform: scaleX(1.01);}
+	100% {transform: scaleX(0.98);}
+	80% {transform: scaleX(1.01);}
+	100% {transform: scaleX(1);}
+}
+
+@-webkit-keyframes stretchLeft {
+	0% {-webkit-transform: scaleX(0.3);}
+	40% {-webkit-transform: scaleX(1.02);}
+	60% {-webkit-transform: scaleX(0.98);}
+	80% {-webkit-transform: scaleX(1.01);}
+	100% {-webkit-transform: scaleX(0.98);}
+	80% {-webkit-transform: scaleX(1.01);}
+	100% {-webkit-transform: scaleX(1);}
+}
+
+.stretchRight{
+	animation-name: stretchRight;
+	animation-duration: 1.5s;
+	animation-timing-function: ease-out;
+	transform-origin: 0% 0%;
+	-webkit-animation-name: stretchRight;
+	-webkit-animation-duration: 1.5s;
+	-webkit-animation-timing-function: ease-out;
+	-webkit-transform-origin: 0% 0%;
+	-ms-transform-origin: 0% 0%;
+}
+
+@keyframes stretchRight {
+	0% {transform: scaleX(0.3);}
+	40% {transform: scaleX(1.02);}
+	60% {transform: scaleX(0.98);}
+	80% {transform: scaleX(1.01);}
+	100% {transform: scaleX(0.98);}
+	80% {transform: scaleX(1.01);}
+	100% {transform: scaleX(1);}
+}
+
+@-webkit-keyframes stretchRight {
+	0% {-webkit-transform: scaleX(0.3);}
+	40% {-webkit-transform: scaleX(1.02);}
+	60% {-webkit-transform: scaleX(0.98);}
+	80% {-webkit-transform: scaleX(1.01);}
+	100% {-webkit-transform: scaleX(0.98);}
+	80% {-webkit-transform: scaleX(1.01);}
+	100% {-webkit-transform: scaleX(1);}
+}
+
+@keyframes bounceInUp {
+  from, 60%, 75%, 90%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+  from { opacity: 0; transform: translate3d(0, 3000px, 0);}
+  60% { opacity: 1; transform: translate3d(0, -20px, 0);}
+  75% { transform: translate3d(0, 10px, 0);}
+  90% { transform: translate3d(0, -5px, 0);}
+  to { transform: translate3d(0, 0, 0); opacity:1;}
+}
+
+.bounceInUp {
+  animation-name: bounceInUp;
+  animation-duration: 1s;
+}
