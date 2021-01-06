@@ -54,3 +54,9 @@
   margin: 0 auto;
   padding: 40px;
 }
+.foo{
+  min-height:1000px;
+}
+.golden{
+  color:red
+}

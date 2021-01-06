@@ -18,18 +18,7 @@ export default class Nav extends Component {
             onClick={this.scrollToTop}
           />
           <ul className="nav-items">
-          <li className="nav-item">
-            <Link
-              activeClass="active"
-              to="intro"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-            >
-              Intro
-            </Link>
-          </li>
+
             <li className="nav-item">
               <Link
                 activeClass="active"
