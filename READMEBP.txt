@@ -1,5 +1,6 @@
 -ACCESS-
-  -$ ng serve (localhost:4200)
+  -$ ng serve //localhost:4200
+  -$ ng serve --port 3000  //changes port to 3000
   -https://brockcp.github.io/resume/
 
 -BUILD-
