@@ -1,7 +1,7 @@
 import React, { useLayoutEffect, useRef, useState } from "react";
 import styled from "styled-components";
 
-const AppTwo = () => {
+const Animation = () => {
   const [show, doShow] = useState({itemOne: false,
                                    itemTwo: false,
                                    itemThree: false});
@@ -77,4 +77,4 @@ const Wrapper = styled.div`
   align-items: center;
 `;
 
-export default AppTwo;
+export default Animation;
