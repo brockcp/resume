@@ -3,7 +3,6 @@ import React from 'react';
 function About(){
   return(
     <div className="foo" id="about">
-      <div id="hero-image"></div>
         <div className="container-fluid bg-color-1 p-20">
           <h1 className="text-center font-size40 font-300 color-1a">Fascination!</h1>
           <hr className="hr-skills" />

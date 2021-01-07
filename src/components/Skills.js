@@ -23,7 +23,7 @@ function Skills(){
   return(
     <div classNameName="foo" id="skills">
 
-      <div className="skills-image"></div>
+      
 
       <div className="container-fluid bg-color-1 p-b-50">
         <div className="col-xs-12 col-md-8 offset-md-2 p-t-30">

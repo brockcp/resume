@@ -6,7 +6,6 @@ export default class Nav extends Component {
   scrollToTop = () => {
     scroll.scrollToTop();
   };
-
   render() {
     return (
       <nav className="nav" id="navbar">
