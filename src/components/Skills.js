@@ -1,6 +1,25 @@
-import React from 'react';
+import React,{useLayoutEffect, useRef, useState} from 'react';
+import styled from 'styled-components';
 
 function Skills(){
+  const [show, doShow] = useState({itemOne:false, itemTwo:false});
+  const refOne = useRef(null);
+  const refTwo = useRef(null);
+  useLayoutEffect(()=>{
+    const topPos = element => element.getBoundingClientRect().top;
+    const div1Pos = topPos(refOne.current),
+          div2Pos = topPos(refTwo.current);
+    const onScroll = () => {
+      const scrollPos = window.scrollY + window.innerHeight;
+      if(div2Pos<scrollPos){
+        doShow(state=>({...state, itemTwo:true}));
+      }else if(div1Pos<scrollPos){
+        doShow(state=>({...state, itemOne:true}));
+      }
+    };
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
   return(
     <div classNameName="foo" id="skills">
 
@@ -15,7 +34,7 @@ function Skills(){
         <h1 className="text-center font-300 p-20"> Skillset</h1>
                <div className="row">
 
-
+<DivTwo animate={show.itemTwo} ref={refTwo}>
                     <div className="col-md-6 col-lg-4 text-center">
                       <span className="icons-container">
                           <i className="icon-html5 font-size100 color-2c"></i>
@@ -30,7 +49,8 @@ function Skills(){
                         <li><a href="https://github.com/brockcp/ocwebworks/blob/d17a52b5e8410efc6747307dab19dffc46bb3f98/src/index.html#L23" target="_blank" rel="noreferrer" className="linkcolor-1a">Adding Animation to Bootstrap Nav</a></li>
                       </ul>
                     </div>
-
+</DivTwo>
+<Div animate={show.itemOne} ref={refOne}>
                     <div className="col-md-6 col-lg-4 text-center">
                       <span className="icons-container">
                           <i className="icon-angular-alt font-size100 color-2c"></i>
@@ -45,7 +65,7 @@ function Skills(){
                         <li><a href="https://bitbucket.org/brockcp/resume-a/src/master/" target="_blank" rel="noreferrer" className="linkcolor-1a">This Site Was Built With Angular7</a></li>
                       </ul>
                     </div>
-
+</Div>
                     <div className="col-md-6 col-lg-4 text-center">
                       <span className="icons-container">
                           <i className="icon-ruby font-size100 color-2c"></i>
@@ -149,4 +169,22 @@ function Skills(){
     </div>
   )
 }
+
+const Div = styled.div`
+  height: 300px;
+  width: 400px;
+  background-color: red;
+  text-align: center;
+  transform: translateX(${({ animate }) => (animate ? "0" : "-100vw")});
+  transition: transform 1s;
+`;
+const DivTwo = styled.div`
+  height: 300px;
+  width: 400px;
+  margin-top:600px;
+  background-color: gray;
+  transform: translateY(${({ animate }) => (animate ? "0" : "10vw")});
+  transition: transform .5s;
+`;
+
 export default Skills;
