@@ -6,17 +6,19 @@ import Skills from './components/Skills';
 import Works from './components/Works';
 import Foot from './components/Foot';
 import Animation from './components/Animation';
-import Sam from './components/Sam';
+import Bg from './components/Bg';
 
 function App(){
   return(
     <div>
       <Nav />
       <Intro />
-      <Sam />
+      <Bg />
       <About />
+      <Skills />
       <Works />
       <Foot />
+      <Animation />
     </div>
   )
 }

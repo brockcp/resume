@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import logo from "../logo.svg";
+import logo from "../bp.png";
 import { Link, animateScroll as scroll } from "react-scroll";
 
 export default class Nav extends Component {

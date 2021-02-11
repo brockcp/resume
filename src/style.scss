@@ -1,3 +1,8 @@
+.p-0{
+  padding:0
+}
+
+
 :root {
   --off-white: #fafafa;
 }
@@ -135,3 +140,33 @@ a.linkcolor-1a:hover{color:$base-1b}
 ul.p-l-xs25p-sm33p li{
   list-style-type: none;
 }
+
+
+
+
+
+
+
+
+// .wrapper {
+//   position: relative;
+//   overflow: hidden;
+// }
+// img {
+//   position: absolute;
+//   width: 100%;
+//   height: 100%;
+//   top: 0;
+//   bottom: 0;
+//   left: 0;
+//   right: 0;
+//   object-fit: cover;
+//   object-position: center;
+// }
+// .source {
+//   opacity: 0;
+//   transition: opacity 1s;
+// }
+// .loaded {
+//   opacity: 1;
+// }
