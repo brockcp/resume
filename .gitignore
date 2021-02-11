@@ -1,5 +1,5 @@
 .DS_Store
-src/.DS_Store
+**/.DS_Store
 src/assets/
 node_modules/
 .eslintcache
