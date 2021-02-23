@@ -9,10 +9,7 @@ function Works(){
 
 <div className="container-fluid bg-color-1">
 
-  <div className="col-xs-12 col-md-8 offset-md-2 p-t-30">
-    <p className="color-1a font-size26 font-200">Building website after website, and perhaps even an app. That is my goal. Here are a few I've already done:
-    </p>
-  </div>
+
   <hr className="hr-background" />
 
 
