@@ -2,19 +2,8 @@ import React from 'react';
 
 function Works(){
   return(
-    <div className="foo" id="works">
 
-
-<div className="works-image"></div>
-
-<div className="container-fluid bg-color-1">
-
-
-  <hr className="hr-background" />
-
-
-  <h1 className="text-center font-300 p-20">Works</h1>
-  <hr className="hr-background" />
+<div className="container-fluid bg-color-1" id="works">
   <div className="row">
     <div className="col-md-6 offset-md-3">
       <ul className="p-l-xs25p-sm33p">
@@ -31,8 +20,6 @@ function Works(){
       </ul>
     </div>
   </div>
-</div>
-
 </div>
 
   )

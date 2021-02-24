@@ -18,6 +18,7 @@ $base-2d: darken($base-2a, 20%) !default;
 .color-2c{ color: $base-2b !important }
 .color-2d{ color: $base-2d !important }
 .bg-color-1 { background: $base-2a !important}
+.bg-color-2 { background: $base-2b !important}
 a.linkcolor-1a{color:$base-1c; text-decoration: none;}
 a.linkcolor-1a:hover{color:$base-1b}
 
@@ -90,14 +91,35 @@ a.linkcolor-1a:hover{color:$base-1b}
 .p-100{
   padding:100px 0
 }
-.bi-arrow-down-circle{
+.bi-chevron-down{
   margin-top:200px;
   color:gray;
 }
 
 //SKILLS
-.icon{
-  width:30%;
-  color:red;
-  fill:blue;
+#skills{
+  padding: 100px 10px;
 }
+.mh-400{
+  min-height:500px;
+  display:block;
+}
+.icons-container{
+  position:relative;
+  min-height:400px; //#$#*!!!
+}
+.icons-container img{
+  position:absolute;
+  width:80%;
+  margin:0 10%;
+  height:auto;
+  left:0;
+  top:0;
+  opacity:.05;
+}
+.icon-info{
+  position:absolute;
+  width:95%
+}
+.ccc{border:1px solid blue;
+};
