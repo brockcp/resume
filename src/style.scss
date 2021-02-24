@@ -86,29 +86,18 @@ a.linkcolor-1a:hover{color:$base-1b}
 }
 
 
-//????????
-.intro-pack h4, .intro-pack div{
-  display: inline-block;
+//INTRO
+.p-100{
+  padding:100px 0
 }
-p-0{
-  padding:0
+.bi-arrow-down-circle{
+  margin-top:200px;
+  color:gray;
 }
 
-
-//ANIMATION
-.eight {
-  color:coral;
-  font-size:40px;
-  animation-duration: 1s;
-  animation-fill-mode: both;
-  animation-timing-function: ease-in-out;
-}
-.eight-bounceInLeft {
-  animation-name: bounceInLeft;
-}
-@keyframes bounceInLeft {
-  0% {opacity: 0;transform: translateX(1200px);}
-  60% {opacity: 1;transform: translateX(0px);}
-  80% {transform: translateX(20px);}
-  100% {transform: translateX(0);}
+//SKILLS
+.icon{
+  width:30%;
+  color:red;
+  fill:blue;
 }
