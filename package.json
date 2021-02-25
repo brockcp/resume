@@ -1,66 +1,47 @@
 {
-  "name": "resume-angular",
-  "version": "0.0.0",
-  "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e",
-    "dev": "lite-server"
-  },
+  "name": "client",
+  "version": "0.1.0",
   "private": true,
+  "homepage": "https://brockcp.github.io/resume",
   "dependencies": {
-    "@angular/animations": "~7.1.0",
-    "@angular/common": "~7.1.0",
-    "@angular/compiler": "~7.1.0",
-    "@angular/core": "~7.1.0",
-    "@angular/forms": "~7.1.0",
-    "@angular/platform-browser": "~7.1.0",
-    "@angular/platform-browser-dynamic": "~7.1.0",
-    "@angular/router": "~7.1.0",
-    "@fortawesome/angular-fontawesome": "^0.3.0",
-    "@fortawesome/fontawesome-svg-core": "^1.2.19",
-    "@fortawesome/free-brands-svg-icons": "^5.9.0",
-    "@fortawesome/free-solid-svg-icons": "^5.9.0",
-    "@ng-bootstrap/ng-bootstrap": "^4.2.1",
-    "ajv": "^6.10.0",
-    "ajv-keywords": "^3.4.0",
-    "bootstrap": "^4.3.1",
-    "core-js": "^2.6.9",
-    "font-awesome": "^4.7.0",
-    "font-mfizz": "^2.4.1",
-    "fontawesome": "^5.6.3",
-    "jquery": "^3.5.1",
-    "ng-bootstrap": "^1.6.3",
+    "bootstrap": "^5.0.0-beta1",
     "node-sass": "^4.14.1",
-    "popper.js": "^1.15.0",
-    "rxjs": "~6.3.3",
-    "tslib": "^1.10.0",
-    "zone.js": "~0.8.26"
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-image-and-background-image-fade": "^1.0.6",
+    "react-scripts": "4.0.1",
+    "react-scroll": "^1.8.1",
+    "react-spring": "^8.0.27",
+    "styled-components": "^5.2.1",
+    "web-vitals": "^0.2.4"
+  },
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^0.10.0",
-    "@angular/cli": "~7.1.0",
-    "@angular/compiler-cli": "^7.2.15",
-    "@angular/language-service": "~7.1.0",
-    "@types/jasmine": "~2.8.8",
-    "@types/jasminewd2": "~2.0.3",
-    "@types/node": "~8.9.4",
-    "aos": "^2.3.4",
-    "codelyzer": "~4.5.0",
-    "jasmine-core": "~2.99.1",
-    "jasmine-spec-reporter": "~4.2.1",
-    "karma": "^4.1.0",
-    "karma-chrome-launcher": "~2.2.0",
-    "karma-coverage-istanbul-reporter": "~2.0.1",
-    "karma-jasmine": "~1.1.2",
-    "karma-jasmine-html-reporter": "^0.2.2",
-    "lite-server": "^2.6.1",
-    "protractor": "~5.4.0",
-    "ts-node": "~7.0.0",
-    "tslint": "~5.11.0",
-    "typescript": "~3.1.6"
+    "gh-pages": "^3.1.0"
   }
 }
