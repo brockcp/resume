@@ -6,11 +6,11 @@ function About(){
       <div className="row">
        <div className="col-sm-12 col-md-8 offset-md-2">
           <p className="font-size30 font-200 line-height-13 color-1b">
-          Building websites and apps since 2009,
-          I do my very best to serve my clients
-          by building the richest most highly performant
-          web services,
-          while learning as much as I can along the way.
+          Building websites and apps since 2010,
+          I always do my very best to serve my clients
+          the richest most highly performant
+          products and services. If I can learn a few things and improve
+          my skills along the way, I am a happy camper.
           </p>
         </div>
       </div>

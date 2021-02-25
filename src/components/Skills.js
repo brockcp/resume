@@ -19,8 +19,8 @@ function Skills(){
               <img src={bootstrap} className="icon" alt="blah" />
               <div className="icon-info">
                 <h3 className="color-1c">FRONTEND FOUNDATIONS & FRAMEWORKS</h3>
-                <h4 className="color-1d">I stay up to date on the latest HTML and CSS best practices</h4>
-                <h4 className="color-1d">This site is running the latest version of Bootstrap, which is 5 </h4>
+                <h4 className="color-1d">I stay up to date on the latest HTML and CSS best practices, including RWD</h4>
+                <h4 className="color-1d">Bootstrap 5 is running on this site</h4>
               </div>
             </div>
          </div>
@@ -30,7 +30,7 @@ function Skills(){
               <img src={nodejs} className="icon" alt="blah" />
               <div className="icon-info">
                 <h3 className="color-1c">JAVASCRIPT</h3>
-                <h4 className="color-1d">I have recently built a Full-stack site on the MERN stack</h4>
+                <h4 className="color-1d">Here is a Full(MERN)-stack I recently built.</h4>
                 <h4 className="color-1d">I primarily use React now for frontend development.</h4>
               </div>
             </div>
@@ -41,7 +41,7 @@ function Skills(){
               <img src={wp} className="icon" alt="blah" />
               <div className="icon-info">
                 <h3 className="color-1c">WORDPRESS</h3>
-                <h4 className="color-1d">Here is a wordpress theme I built which is fully customizeable via custmizr</h4>
+                <h4 className="color-1d">Here is a wordpress theme I built. It is fully customizeable via wp's customizr</h4>
               </div>
             </div>
          </div>
@@ -51,7 +51,7 @@ function Skills(){
               <img src={mongodb} className="icon" alt="blah" />
               <div className="icon-info">
                 <h3 className="color-1c">DATABASE</h3>
-                <h4 className="color-1d">Experience building with Mongodb(local and Atlas) as well as Mysql and Postgre</h4>
+                <h4 className="color-1d">Experience building with Mongodb(local and Atlas) as well as Mysql and Postgres</h4>
               </div>
             </div>
          </div>
@@ -61,7 +61,7 @@ function Skills(){
               <img src={git} className="icon" alt="blah" />
               <div className="icon-info">
                 <h3 className="color-1c">GIT</h3>
-                <h4 className="color-1d">Ive been using Git for several years now. I use Github, Gitlab and Bitbucket. I like Gitlab best.</h4>
+                <h4 className="color-1d">Ive been using Git for several years now. I use Github, Gitlab and Bitbucket. I vote for Gitlab.</h4>
               </div>
             </div>
          </div>
@@ -71,7 +71,7 @@ function Skills(){
               <img src={npm} className="icon" alt="blah" />
               <div className="icon-info">
                 <h3 className="color-1c">BUILD TOOLS & MODULES</h3>
-                <h4 className="color-1d">Several years experience working with NPM, SASS, and now Webpack</h4>
+                <h4 className="color-1d">Several years experience working with NPM, SASS, Webpack, etc.</h4>
               </div>
             </div>
          </div>
