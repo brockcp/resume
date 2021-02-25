@@ -90,9 +90,38 @@ ul.nav-items{
 
 
 //INTRO
-.p-100{
-  padding:100px 0
+.pt-100{
+  padding-top: 200px;
 }
+.intro-a{
+  color:gray;
+  font-size: 30px;
+}
+.intro-b{
+  font-size:32px;
+}
+.intro-c{
+  font-size:36px;
+  font-weight: bold;
+}
+.intro-d{
+  font-size:32px;
+}
+@media(min-width: 576px){
+  .intro-a{
+     font-size: 60px;
+  }
+  .intro-b{
+    font-size:40px;
+  }
+  .intro-c{
+    font-size:40px;
+  }
+  .intro-d{
+    font-size:40px;
+  }
+}
+
 .bi-chevron-down{
   margin-top:200px;
   color:gray;
@@ -136,4 +165,8 @@ ul.nav-items{
 }
 .footer a:hover{
   color: goldenrod;
+}
+.dribbble{
+  width:40px;
+  color:red;
 }
