@@ -19,6 +19,7 @@ $base-2d: darken($base-2a, 20%) !default;
 .color-2d{ color: $base-2d !important }
 .bg-color-1 { background: $base-2a !important}
 .bg-color-2 { background: $base-2b !important}
+.bg-color-3 { background: $base-2d !important}
 a.linkcolor-1a{color:$base-1c; text-decoration: none;}
 a.linkcolor-1a:hover{color:$base-1b}
 
@@ -48,27 +49,24 @@ a.linkcolor-1a:hover{color:$base-1b}
 
 
 //NAV
-:root {
-  --off-white: #fafafa;
-}
 .nav {
-  background-color: var(--off-white);
+  background-color: goldenrod;
   position: sticky;
   top: 0px;
   width: 100%;
-  height: 80px;
+  height: 70px;
   z-index: 1000;
   box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.15);
 }
 .nav-logo {
-  height: 60px;
-  width: 60px;
+  height: 50px;
+  width: 50px;
 }
 .nav-logo:hover {
   cursor: pointer;
 }
 .nav .nav-content {
-  max-width: 900px;
+  width: 1200px;
   padding: 0rem 3rem;
   margin: 0 auto;
   display: flex;
@@ -76,9 +74,13 @@ a.linkcolor-1a:hover{color:$base-1b}
   align-items: center;
   height: 100%;
 }
+ul.nav-items{
+  margin-bottom:0; //BP ADDED TO CENTER MENU
+}
 .nav-item {
   display: inline;
   margin-left: 2rem;
+  margin-top:2rem;
   color: #333;
 }
 .nav-item:hover {
@@ -97,25 +99,29 @@ a.linkcolor-1a:hover{color:$base-1b}
 }
 
 //SKILLS
-#skills{
-  padding: 100px 10px;
-}
-.mh-400{
-  min-height:500px;
-  display:block;
-}
 .icons-container{
   position:relative;
-  min-height:400px; //#$#*!!!
+  min-height:290px; //#$#*!!!
+}
+@media(min-width: 576px){
+  .icons-container{
+    min-height:425px;
+  }
 }
 .icons-container img{
   position:absolute;
-  width:80%;
-  margin:0 10%;
+  width:50%;
+  margin:0 25%;
   height:auto;
   left:0;
   top:0;
-  opacity:.05;
+  opacity:.03;
+}
+@media(min-width: 768px){
+  .icons-container img{
+    width:70%;
+    margin:0 15%;
+  }
 }
 .icon-info{
   position:absolute;
@@ -123,3 +129,11 @@ a.linkcolor-1a:hover{color:$base-1b}
 }
 .ccc{border:1px solid blue;
 };
+
+//FOOTER
+.footer a{
+  text-decoration: none;
+}
+.footer a:hover{
+  color: goldenrod;
+}

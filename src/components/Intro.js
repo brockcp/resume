@@ -29,7 +29,7 @@ function Intro(){
   });
   return(
     <div className="" id="intro">
-      <div className="container-fluid bg-color-1 p-100">
+      <div className="container-fluid bg-color-1 pt-2">
           <div className="row">
             <div className="col-12 text-center">
               <animated.div style={{...springA}}>Hello</animated.div>

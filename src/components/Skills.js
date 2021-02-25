@@ -11,9 +11,8 @@ import git from "../icons/git.svg";
 
 function Skills(){
   return(
-    <div className="container-fluid bg-color-1 p-b-50" id="skills">
-      <h1 className="text-center font-300 p-20 color-1a"> Skills</h1>
-       <div className="row">
+    <div className="container-fluid bg-color-1" id="skills">
+       <div className="row pt-5 pb-5">
 
          <div className="col-md-6 col-lg-4 text-center">
             <div className="icons-container">
