@@ -5,7 +5,7 @@ function About(){
     <div className="container-fluid bg-color-2 pt-5 pb-5" id="about">
       <div className="row">
        <div className="col-sm-12 col-md-8 offset-md-2">
-          <p className="font-size30 font-200 line-height-13 color-1b">
+          <p className="font-size30 font-200 line-height-13 color-1a">
           Building websites and apps since 2010,
           I always do my very best to serve my clients
           the richest most highly performant

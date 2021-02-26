@@ -3,7 +3,7 @@ import React from 'react';
 function Works(){
   return(
     <div className="container-fluid bg-color-3" id="works">
-      <h1 className="text-center font-300 pt-5 color-1d">Recent Works</h1>
+      <h1 className="text-center font-300 pt-5 color-1a">Recent Works</h1>
       <div className="row pt-3 pb-350">
         <div className="col-md-6 offset-md-3">
           <ul className="p-l-xs25p-sm33p list-style-none">

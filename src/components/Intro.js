@@ -11,13 +11,13 @@ function Intro(){
   });
   const springB = useSpring({
     from: {transform: "scale(0.3)", opacity:"0", color:'red'},
-    to: {transform: "scale(1)", opacity:"1", color:"goldenrod"},
+    to: {transform: "scale(1)", opacity:"1", color: "#ffeeb6"},
     delay:1000,
     config: {mass: 6, tension:170, friction:30 },
   });
   const springC = useSpring({
     from: {transform: "scale(0.3)", opacity:"0", color:'red'},
-    to: {transform: "scale(1)", opacity:"1", color:"goldenrod"},
+    to: {transform: "scale(1)", opacity:"1", color:"#ffdd70"},
     delay:2500,
     config: {mass: 6, tension:150, friction:30 },
   });
