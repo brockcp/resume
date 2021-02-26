@@ -69,14 +69,22 @@ a.linkcolor-1a:hover{color:$base-1b}
   cursor: pointer;
 }
 .nav .nav-content {
-  width: 1200px;
+  width: 90%;
   padding: 0rem 3rem;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 100%;
+  //border:1px solid red;
 }
+@media(min-width: 768px){
+  .nav .nav-content{
+    width:80%;
+    //border:1px solid blue;
+  }
+}
+
 ul.nav-items{
   margin-bottom:0; //BP ADDED TO CENTER MENU
 }
