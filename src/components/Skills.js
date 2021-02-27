@@ -148,7 +148,7 @@ function Skills(){
                     <li>Ruby On Rails</li>
                     <li>Amazon Web Services</li>
                     <li>Angular</li>
-                    <li></li>
+                    <li>Heroku, Netlify, Digital Ocean</li>
                   </ul>
               </div>
             </div>
