@@ -61,18 +61,16 @@ a.linkcolor-1a:hover{color:$base-1b}
   cursor: pointer;
 }
 .nav .nav-content {
-  width: 90%;
-  padding: 0rem .5rem;
+  width: 80%;
+  padding: 0rem .2rem;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 100%;
-  //border:1px solid red;
 }
 @media(min-width: 768px){
   .nav .nav-content{
-    width:80%;
     padding: 0rem 3rem;
   }
 }
@@ -81,11 +79,16 @@ ul.nav-items{
 }
 .nav-item {
   display: inline;
-  margin-left: 2rem;
+  margin-left: 1rem;
   margin-top:2rem;
   color: $base-2d;
   font-size: 20px;
   font-weight:bold;
+}
+@media(min-width: 768px){
+  .nav-item{
+    margin-left: 2rem;
+  }
 }
 .nav-item:hover {
   color: $base-2c;
@@ -98,6 +101,15 @@ ul.nav-items{
 
 
 //INTRO
+.blah{
+  padding-top: 70px;
+}
+@media(min-width: 768px){
+ .blah{
+   padding-top: 200px;
+ }
+}
+
 .pt-100{
   padding-top: 200px;
 }
@@ -143,6 +155,9 @@ ul.nav-items{
 
 
 //SKILLS
+.skills-items li{
+  list-style-type: none;
+}
 .icons-container{
   position:relative;
   min-height:290px; //#$#*!!!
@@ -171,6 +186,14 @@ ul.nav-items{
   position:absolute;
   width:95%
 }
+.skills-link{
+  color:$base-1b;
+  text-decoration: none;
+}
+.skills-link:hover{
+  color:lighten($base-1b, 5%);
+}
+
 
 
 //WORKS

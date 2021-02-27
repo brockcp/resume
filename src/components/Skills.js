@@ -13,95 +13,143 @@ function Skills(){
   return(
     <div className="container-fluid bg-color-1" id="skills">
        <div className="row pt-5 pb-5">
-
+         <h2 className="text-center pb-4 color-2d">Relevant Tech</h2>
          <div className="col-md-6 col-lg-4 text-center">
             <div className="icons-container">
-              <img src={bootstrap} className="icon" alt="blah" />
+              <img src={bootstrap} className="icon" alt="bootstrap icon" />
               <div className="icon-info">
                 <h3 className="color-1a">FRONTEND FOUNDATIONS & FRAMEWORKS</h3>
-                <h4 className="color-1b">I stay up to date on the latest HTML and CSS best practices, including RWD</h4>
-                <h4 className="color-1b">Bootstrap 5 is running on this site</h4>
+                <h5 className="color-2d">Up to date on the latest HTML and CSS best practices, including:</h5>
+                 <ul className="skills-items">
+                   <li>HTML5</li>
+                   <li>CSS3 </li>
+                   <li>BootStrap</li>
+                   <li>Responsive Design</li>
+                 </ul>
               </div>
             </div>
          </div>
 
          <div className="col-md-6 col-lg-4 text-center">
             <div className="icons-container">
-              <img src={nodejs} className="icon" alt="blah" />
+              <img src={nodejs} className="icon" alt="nodejs icon" />
               <div className="icon-info">
                 <h3 className="color-1a">JAVASCRIPT</h3>
-                <h4 className="color-1b">Here is a Full(MERN)-stack I recently built.</h4>
-                <h4 className="color-1b">I primarily use React now for frontend development.</h4>
+                <h5 className="color-2d">Experience working in the MERN stack</h5>
+                <ul className="skills-items">
+                  <li>React</li>
+                  <li>NodeJS </li>
+                  <li>ExpressJS</li>
+                  <li>Mongoose</li>
+                  <li><a href="http://eigopost.com"
+                         target="_blank"
+                         className="skills-link">
+                    Here
+                      </a> is a full-stack app I recently built
+                  </li>
+                </ul>
               </div>
             </div>
          </div>
 
          <div className="col-md-6 col-lg-4 text-center">
             <div className="icons-container">
-              <img src={wp} className="icon" alt="blah" />
+              <img src={wp} className="icon" alt="wordpress icon" />
               <div className="icon-info">
                 <h3 className="color-1a">WORDPRESS</h3>
-                <h4 className="color-1b">Here is a wordpress theme I built. It is fully customizeable via wp's customizr</h4>
+                <ul className="skills-items">
+                  <li>Fully Customizable Wp Theme <a href="http://ocwebworks.com/works/wordpress/"
+                         target="_blank"
+                         className="skills-link">
+                    See it here
+                      </a>
+                  </li>
+                </ul>
               </div>
             </div>
          </div>
 
          <div className="col-md-6 col-lg-4 text-center">
             <div className="icons-container">
-              <img src={mongodb} className="icon" alt="blah" />
+              <img src={mongodb} className="icon" alt="mongodb icon" />
               <div className="icon-info">
                 <h3 className="color-1a">DATABASE</h3>
-                <h4 className="color-1b">Experience building with Mongodb(local and Atlas) as well as Mysql and Postgres</h4>
+                <h5 className="color-2d">Experience with the following DB techs.</h5>
+                <ul className="skills-items">
+                  <li>MongoDB (including Atlas)</li>
+                  <li>Mysql</li>
+                  <li>Postgres</li>
+                  <li></li>
+                </ul>
               </div>
             </div>
          </div>
 
          <div className="col-md-6 col-lg-4 text-center">
             <div className="icons-container">
-              <img src={git} className="icon" alt="blah" />
+              <img src={git} className="icon" alt="git icon" />
               <div className="icon-info">
                 <h3 className="color-1a">GIT</h3>
-                <h4 className="color-1b">Ive been using Git for several years now. I use Github, Gitlab and Bitbucket. I vote for Gitlab.</h4>
+                <h5 className="color-2d">I use Github, Gitlab and Bitbucket. I like Gitlab best.</h5>
               </div>
             </div>
          </div>
 
          <div className="col-md-6 col-lg-4 text-center">
             <div className="icons-container">
-              <img src={npm} className="icon" alt="blah" />
+              <img src={npm} className="icon" alt="npm icon" />
               <div className="icon-info">
                 <h3 className="color-1a">BUILD TOOLS & MODULES</h3>
-                <h4 className="color-1b">Several years experience working with NPM, SASS, Webpack, etc.</h4>
+                <h5 className="color-2d">Experience with the following techs.</h5>
+                <ul className="skills-items">
+                  <li>NPM</li>
+                  <li>SASS</li>
+                  <li>Webpack</li>
+                  <li>Babel</li>
+                </ul>
               </div>
             </div>
          </div>
 
          <div className="col-md-6 col-lg-4 text-center">
             <div className="icons-container">
-              <img src={graph} className="icon" alt="blah" />
+              <img src={graph} className="icon" alt="graph icon" />
               <div className="icon-info">
                 <h3 className="color-1a">GOOGLE ANALYTICS</h3>
-                <h4 className="color-1b">Several years experience working with Google Analytics</h4>
+                <h5 className="color-2d">Several years experience working with Google Analytics</h5>
               </div>
             </div>
          </div>
 
          <div className="col-md-6 col-lg-4 text-center">
             <div className="icons-container">
-              <img src={svg} className="icon" alt="blah" />
+              <img src={svg} className="icon" alt="svg icon" />
               <div className="icon-info">
                 <h3 className="color-1a">GRAPHIC DESIGN</h3>
-                <h4 className="color-1b">Ok, this area is not my expertise, but I can do the job when necessary.</h4>
+                <h5 className="color-2d">Not my expertise, but I can do the job when necessary.</h5>
+                  <ul className="skills-items">
+                    <li><a href="https://dribbble.com/brockcp"
+                           target="_blank"
+                           className="skills-link">
+                           Dribbble account
+                       </a>
+                   </li>
+                  </ul>
               </div>
             </div>
          </div>
 
          <div className="col-md-6 col-lg-4 text-center">
             <div className="icons-container">
-              <img src={rubyonrails} className="icon" alt="blah" />
+              <img src={rubyonrails} className="icon" alt="ror icon" />
               <div className="icon-info">
-                <h3 className="color-1a">RUBY ON RAILS</h3>
-                <h4 className="color-1b">I used to work with Ruby and Rails. However, its been a while.</h4>
+                <h3 className="color-1a">ADDITIONAL SKILLS</h3>
+                  <ul className="skills-items">
+                    <li>Ruby On Rails</li>
+                    <li>Amazon Web Services</li>
+                    <li>Angular</li>
+                    <li></li>
+                  </ul>
               </div>
             </div>
          </div>

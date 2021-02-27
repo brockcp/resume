@@ -22,16 +22,16 @@ function Intro(){
     config: {mass: 6, tension:150, friction:30 },
   });
   const springD = useSpring({
-    from: {opacity:"0", color:'gray'},
+    from: {opacity:"0", color:'#333333'},
     to: {opacity:"1"},
     delay:4500,
     config: {mass: 6, tension:150, friction:30 },
   });
   return(
     <div className="" id="intro">
-      <div className="container-fluid bg-color-1 pt-100">
+      <div className="container-fluid bg-color-1">
           <div className="row">
-            <div className="col-12 text-center">
+            <div className="col-12 text-center blah">
               <animated.div style={{...springA}} className="intro-a">Hello There.</animated.div>
               <animated.div style={{...springB}} className="intro-b">My name is Brock</animated.div>
               <animated.div style={{...springC}} className="intro-c">I am a Front End Web Developer</animated.div>
