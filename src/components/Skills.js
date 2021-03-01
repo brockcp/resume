@@ -43,6 +43,7 @@ function Skills(){
                   <li>Mongoose</li>
                   <li><a href="http://eigopost.com"
                          target="_blank"
+                         rel="noreferrer"
                          className="skills-link">
                     Here
                       </a> is a full-stack app I recently built
@@ -60,6 +61,7 @@ function Skills(){
                 <ul className="skills-items">
                   <li>Fully Customizable Wp Theme <a href="http://ocwebworks.com/works/wordpress/"
                          target="_blank"
+                         rel="noreferrer"
                          className="skills-link">
                     See it here
                       </a>
@@ -130,6 +132,7 @@ function Skills(){
                   <ul className="skills-items">
                     <li><a href="https://dribbble.com/brockcp"
                            target="_blank"
+                           rel="noreferrer"
                            className="skills-link">
                            Dribbble account
                        </a>
