@@ -1,13 +1,12 @@
 import bootstrap from '../icons/bootstrap.svg';
 import nodejs from '../icons/nodejs.svg';
-//import reacticon from "../icons/reactjs.svg";
-import rubyonrails from "../icons/ruby-on-rails.svg";
-import mongodb from "../icons/mongodb.svg";
 import wp from "../icons/wordpress.svg";
-import svg from "../icons/svg.svg";
-import graph from "../icons/line-graph.svg";
-import npm from "../icons/npm.svg";
+import mongodb from "../icons/mongodb.svg";
 import git from "../icons/git.svg";
+import npm from "../icons/npm.svg";
+import graph from "../icons/line-graph.svg";
+import svg from "../icons/svg.svg";
+import rubyonrails from "../icons/ruby-on-rails.svg";
 
 function Skills(){
   return(
@@ -22,9 +21,10 @@ function Skills(){
                 <h5 className="color-2d">Up to date on the latest HTML and CSS best practices, including:</h5>
                  <ul className="skills-items">
                    <li>HTML5</li>
-                   <li>CSS3 </li>
+                   <li>CSS3</li>
                    <li>BootStrap</li>
-                   <li>Responsive Design</li>
+                   <li>Responsive Web Design</li>
+                   <li>SEO</li>
                  </ul>
               </div>
             </div>
@@ -35,12 +35,13 @@ function Skills(){
               <img src={nodejs} className="icon" alt="nodejs icon" />
               <div className="icon-info">
                 <h3 className="color-1a">JAVASCRIPT</h3>
-                <h5 className="color-2d">Experience working in the MERN stack</h5>
+                <h5 className="color-2d">Experience working with the MERN stack</h5>
                 <ul className="skills-items">
-                  <li>React</li>
+                  <li>ReactJS</li>
                   <li>NodeJS </li>
                   <li>ExpressJS</li>
-                  <li>Mongoose</li>
+                  <li>MongooseJS</li>
+                  <li>Jquery</li>
                   <li><a href="http://eigopost.com"
                          target="_blank"
                          rel="noreferrer"
@@ -59,13 +60,15 @@ function Skills(){
               <div className="icon-info">
                 <h3 className="color-1a">WORDPRESS</h3>
                 <ul className="skills-items">
-                  <li>Fully Customizable Wp Theme <a href="http://ocwebworks.com/works/wordpress/"
+                  <li>Theme Creation(Fully Customizable) <a href="http://ocwebworks.com/works/wordpress/"
                          target="_blank"
                          rel="noreferrer"
                          className="skills-link">
-                    See it here
+                    link
                       </a>
                   </li>
+                  <li>Plugin integration</li>
+                  <li>Bootstrap integration</li>
                 </ul>
               </div>
             </div>
@@ -81,6 +84,7 @@ function Skills(){
                   <li>MongoDB (including Atlas)</li>
                   <li>Mysql</li>
                   <li>Postgres</li>
+                  <li>Active Record</li>
                   <li></li>
                 </ul>
               </div>
@@ -101,7 +105,7 @@ function Skills(){
             <div className="icons-container">
               <img src={npm} className="icon" alt="npm icon" />
               <div className="icon-info">
-                <h3 className="color-1a">BUILD TOOLS & MODULES</h3>
+                <h3 className="color-1a">BUILD TOOLS, ETC</h3>
                 <h5 className="color-2d">Experience with the following techs.</h5>
                 <ul className="skills-items">
                   <li>NPM</li>
@@ -130,6 +134,8 @@ function Skills(){
                 <h3 className="color-1a">GRAPHIC DESIGN</h3>
                 <h5 className="color-2d">Not my expertise, but I can do the job when necessary.</h5>
                   <ul className="skills-items">
+                    <li>GIMP</li>
+                    <li>Inkscape</li>
                     <li><a href="https://dribbble.com/brockcp"
                            target="_blank"
                            rel="noreferrer"
@@ -161,7 +167,4 @@ function Skills(){
     </div>
   )
 }
-
-
-
 export default Skills;

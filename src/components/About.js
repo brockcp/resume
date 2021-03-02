@@ -7,7 +7,7 @@ function About(){
        <div className="col-sm-12 col-md-8 offset-md-2">
           <p className="font-size30 font-200 line-height-13 color-2d">
           Building websites and apps since 2010,
-          I always do my very best to serve my clients
+          I always do my best to serve my clients
           the richest most highly performant
           products and services. If I can learn a few things and improve
           my skills along the way, I am a happy camper.

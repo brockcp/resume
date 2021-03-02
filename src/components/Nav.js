@@ -18,7 +18,7 @@ export default class Nav extends Component {
           />
           <ul className="nav-items">
 
-            <li className="nav-item">
+            <li className="nav-item fancy-underline">
               <Link
                 activeClass="active"
                 to="about"
@@ -30,7 +30,7 @@ export default class Nav extends Component {
                 About
               </Link>
             </li>
-            <li className="nav-item">
+            <li className="nav-item fancy-underline">
               <Link
                 activeClass="active"
                 to="skills"
@@ -42,7 +42,7 @@ export default class Nav extends Component {
                 Skills
               </Link>
             </li>
-            <li className="nav-item">
+            <li className="nav-item fancy-underline">
               <Link
                 activeClass="active"
                 to="works"
