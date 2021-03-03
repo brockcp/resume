@@ -10,7 +10,7 @@ function About(){
           I always do my best to serve my clients
           the richest most highly performant
           products and services. If I can learn a few things and improve
-          my skills along the way, I am a happy camper.
+          my skills along the way, life is good.
           </p>
         </div>
       </div>

@@ -31,7 +31,7 @@ function Intro(){
     <div className="" id="intro">
       <div className="container-fluid bg-color-1">
           <div className="row">
-            <div className="col-12 text-center blah">
+            <div className="col-12 text-center intro-p">
               <animated.div style={{...springA}} className="intro-a">Hello There.</animated.div>
               <animated.div style={{...springB}} className="intro-b">My name is Brock</animated.div>
               <animated.div style={{...springC}} className="intro-c">I am a Frontend Web Developer</animated.div>
