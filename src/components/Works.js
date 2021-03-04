@@ -1,12 +1,10 @@
-import React from 'react';
-
 function Works(){
   return(
     <div className="container-fluid bg-color-2" id="works">
-      <h1 className="text-center font-300 pt-5 color-2d">Recent Works</h1>
+      <h2 className="text-center pt-5 color-2d">Recent Works</h2>
       <div className="row pt-3 pb-350">
-        <div className="col-md-6 offset-md-3">
-          <ul className="p-l-xs25p-sm33p list-style-none">
+        <div className="col mw-350 m-lr-a">
+          <ul className="ms-5 list-style-none">
             <li><a href="http://eigopost.com"
                    target="_blank"
                    rel="noreferrer"

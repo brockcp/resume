@@ -1,6 +1,6 @@
 import React from 'react';
-import Tooltip from '../Tooltip.js';
 import dribbble from '../icons/dribbble.svg';
+import Tooltip from '../Tooltip.js';
 import Resume from '../brock-patterson-resume.pdf.zip';
 
 function Foot(){
@@ -50,7 +50,7 @@ function Foot(){
       </span>
 
       <span className="">
-        <Tooltip content="Download My Resume" direction="right">
+        <Tooltip content="Download Resume" direction="right">
         <a download="brock-patterson-resume.pdf.zip" href={Resume}
            target="_blank" rel="noreferrer" className='m-lr-10 color-1b'>
            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" className="bi bi-card-list" viewBox="0 0 16 16">

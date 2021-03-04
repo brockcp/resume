@@ -1,5 +1,3 @@
-import React from 'react';
-
 function About(){
   return(
     <div className="container-fluid bg-color-2 pt-5 pb-5" id="about">

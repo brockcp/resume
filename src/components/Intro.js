@@ -1,6 +1,6 @@
-import React from 'react';
+//import React from 'react';
 import { useSpring, animated } from 'react-spring';
-import '../style.scss';
+//import '../style.scss';
 
 function Intro(){
   const springA = useSpring({
