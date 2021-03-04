@@ -26,6 +26,20 @@ function Works(){
                   Wordpress Theme
                 </a>
             </li>
+            <li><a href="http://wojtekkfineart.com/"
+                   target="_blank"
+                   rel="noreferrer"
+                   className="font-size26 fancy-underline linkcolor-2b">
+                  Wojtekk Fine Art
+                </a>
+            </li>
+            <li><a href="http://www.ocwebworks.com/works/teboconsulting/"
+                   target="_blank"
+                   rel="noreferrer"
+                   className="font-size26 fancy-underline linkcolor-2b">
+                  Tebo Consulting
+                </a>
+            </li>
           </ul>
         </div>
       </div>

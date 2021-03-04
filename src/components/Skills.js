@@ -42,7 +42,7 @@ function Skills(){
                          target="_blank"
                          rel="noreferrer"
                          className="linkcolor-1a fancy-underline">
-                       MERN Stack example
+                       *MERN Stack example
                       </a>
                   </li>
                 </ul>
@@ -59,6 +59,7 @@ function Skills(){
                   <li>MongoDB/Atlas</li>
                   <li>Mysql</li>
                   <li>Postgres</li>
+                  <li>Firebase</li>
                   <li>Active Record</li>
                 </ul>
               </div>
@@ -87,9 +88,10 @@ function Skills(){
               <div className="icon-info">
                 <h3 className="color-1a">DESIGN</h3>
                   <ul className="skills-items">
-                    <li>GIMP</li>
+                    <li>Logo Creation</li>
+                    <li>SVG & Icon Creation</li>
                     <li>Inkscape</li>
-                    <li>SVG & Icon</li>
+                    <li>GIMP</li>
                   </ul>
               </div>
             </div>
@@ -103,8 +105,8 @@ function Skills(){
                   <ul className="skills-items">
                     <li>Google Analytics</li>
                     <li>AWS</li>
-                    <li>Ruby On Rails</li>
                     <li>GIT</li>
+                    <li>Ruby On Rails</li>
                     <li>Heroku & Netlify</li>
                   </ul>
               </div>
